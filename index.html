@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&family=La+Belle+Aurore&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=c9de4311c5">
+  <link rel="stylesheet" href="style.css?v=d257a48a3b">
   <script type="importmap">
     { "imports": {
       "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
@@ -213,6 +213,25 @@
     </div>
   </section>
 
+  <!-- First visit only: how the library works -->
+  <section id="welcome-modal" class="modal" hidden>
+    <div class="card welcome-card" role="dialog" aria-labelledby="welcome-title">
+      <p class="eyebrow">Before you go in</p>
+      <h2 id="welcome-title">This library is yours alone</h2>
+      <p class="welcome-lede">It keeps every book you have finished, on shelves that never end. Here is how it works.</p>
+      <ul class="welcome-list">
+        <li><span class="keys"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span><span>Walk. Hold <kbd>Shift</kbd> to hurry.</span></li>
+        <li><span class="keys"><kbd>Mouse</kbd></span><span>Look around.</span></li>
+        <li><span class="keys"><kbd>E</kbd></span><span>Shelve a book you have finished: its title, pages, a cover, and a PDF if you have one.</span></li>
+        <li><span class="keys"><kbd>Click</kbd></span><span>Take a book down from the shelf to see it, edit it, or read its PDF on the lectern by the entrance.</span></li>
+        <li><span class="keys"><kbd>J</kbd></span><span>Open your diary and write about what you read.</span></li>
+        <li><span class="keys"><kbd>Esc</kbd></span><span>Open the menu to search your books, back up your library, or walk back to the entrance.</span></li>
+      </ul>
+      <p class="welcome-note">Everything you add stays in this browser, on this computer. Nobody else can see it. Use <em>Save a backup</em> in the menu now and then to keep a copy.</p>
+      <footer><button class="btn primary" id="welcome-ok">Understood</button></footer>
+    </div>
+  </section>
+
   <!-- Choosing a book at the lectern -->
   <section id="lectern-modal" class="modal" hidden>
     <div class="card picker-card">
@@ -245,6 +264,6 @@
   <!-- Fade used when the library takes you back to the start -->
   <div id="fade"><p id="fade-text"></p></div>
 
-  <script type="module" src="main.js?v=c9de4311c5"></script>
+  <script type="module" src="main.js?v=d257a48a3b"></script>
 </body>
 </html>
